@@ -57,7 +57,7 @@ class StringEntry {
  private:
   DataType m_Value;
   uint16_t m_KeyLen;
-  char m_Key[];
+  char m_Key[1];
 
   friend class StringEntryFactory<DataType>;
 };
@@ -100,7 +100,7 @@ class StringEntry<llvm::StringRef> {
  private:
   llvm::StringRef m_Value;
   uint16_t m_KeyLen;
-  char m_Key[];
+  char m_Key[1];
 
   friend class StringEntryFactory<llvm::StringRef>;
 };

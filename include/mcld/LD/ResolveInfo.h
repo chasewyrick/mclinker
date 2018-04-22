@@ -266,7 +266,7 @@ class ResolveInfo {
    * visibility|Local|Com|Def|Dyn|Weak|
    */
   uint32_t m_BitField;
-  char m_Name[];
+  char m_Name[1];
 };
 
 }  // namespace mcld
